@@ -1,3 +1,3 @@
 
-rootProject.name = "KtorFit-MongoDB-SQLDeLight"
+rootProject.name = "KtorFit-MongoDB-Cache"
 

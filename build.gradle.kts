@@ -39,12 +39,9 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.1.3")
     // KMongo
     implementation("org.litote.kmongo:kmongo:4.7.1")
-    // SqlDeLight
-    implementation("com.squareup.sqldelight:runtime:1.5.4")
-    // SQLite para SqlDeLight native
-    implementation("com.squareup.sqldelight:sqlite-driver:1.5.4")
-    // Para poder usar corrutias en SqlDeLight y conectarnos a la base de datos para cambios
-    implementation("com.squareup.sqldelight:coroutines-extensions-jvm:1.5.4")
+    // Cache
+    implementation("io.github.reactivecircus.cache4k:cache4k:0.9.0")
+
 }
 
 tasks.test {

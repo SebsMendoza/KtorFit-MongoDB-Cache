@@ -10,15 +10,15 @@ import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 
 object KtorFitClient {
-    private const val API_URL = "https://rickandmortyapi.com/api/"
+    private const val API_URL = "https://reqres.in/api/"
 
     private val ktorFit by lazy {
         Ktorfit.Builder().httpClient {
             install(ContentNegotiation) {
                 json(
                     Json {
-                        isLenient = true;
-                        ignoreUnknownKeys = true;
+                        isLenient = true
+                        ignoreUnknownKeys = true
                         prettyPrint = true
                     }
                 )
